@@ -2,7 +2,10 @@ package com.cutelife.leetcode;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
+
+/**
+ *
+ */
 
 class Point {
 	int x;
