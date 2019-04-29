@@ -5,18 +5,18 @@ package com.cutelife.leetcode;
  */
 public class BitwiseAnd {
 
-    int rangeBitwiseAnd(int m, int n) {
+    private int rangeBitwiseAnd(int m, int n) {
         int i = 0;
         while (m != n) {
-            m >>= 1;
-            n >>= 1;
-            ++i;
+
+            m = m >> 1;
+            n = n >> 1;
+            i++;
         }
-        return (m << i);
+        return m << i;
     }
 
-    public static void main(String args[]){
-
-        System.out.println(new BitwiseAnd().rangeBitwiseAnd(5,8));
+    public static void main(String args[]) {
+        System.out.println(new BitwiseAnd().rangeBitwiseAnd(9, 15));
     }
 }
